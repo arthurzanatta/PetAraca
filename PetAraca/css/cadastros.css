@@ -1,0 +1,57 @@
+.cadastro {
+	background-image:url("../img/petaraca_cadastrosw.png");
+	/*background-position:center;*/
+	background-size:cover;
+	margin-left:25px;
+	margin-top:5px;
+	margin-right:5px;
+	margin-bottom:5px;
+	padding:10px;
+	width:55%;
+	float:left;
+}
+
+.cidade  {
+	display:inline-block;
+	text-indent:6.4em;
+}
+
+.nome {
+	display:inline-block;
+	text-indent:4em;
+}
+
+.raca {
+	display:inline-block;
+	text-indent:7.2em;
+}
+
+.sexo {
+	display:inline-block;
+	text-indent:7.2em;
+}
+
+.cor {
+	display:inline-block;
+	text-indent:8.2em;
+}
+
+.tamanho {
+	display:inline-block;
+	text-indent:6em;
+}
+
+.email {
+	display:inline-block;
+	text-indent:6.5em;
+}
+
+.telefone {
+	display:inline-block;
+	text-indent:5.8em;
+}
+
+.contatod {
+	display:inline-block;
+	text-indent:1.45em;
+}
