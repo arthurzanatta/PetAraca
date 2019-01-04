@@ -28,8 +28,9 @@
                             <option value="1">Araçatuba</option>
                             <option value="2">Bilac</option>
                             <option value="3">Birigui</option>
-                            <option value="4">Guararapes</option>
-                            <option value="5">Penápolis</option>
+                            <option value="4">Buritama</option>
+                            <option value="5">Guararapes</option>
+                            <option value="6">Penápolis</option>
                         </select></div>
                     </p>
                     <h3>Informações sobre seu Pet</h3>

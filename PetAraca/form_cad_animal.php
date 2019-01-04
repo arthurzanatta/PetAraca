@@ -13,52 +13,52 @@ require 'PHPMailer/src/SMTP.php';
 function cadastrar() {
 $sexoArray = array(0 => "", 1 => "Fêmea", 2 => "Macho");
 $tamanhoArray = array(0 => "", 1 => "Micro", 2 => "Pequeno", 3 => "Médio", 4 => "Grande");
-$cidadeArray = array(0 => "", 1 => "Araçatuba", 2 => "Bilac", 3 => "Birigui", 4 => "Guararapes", 5 => "Penápolis");
+$cidadeArray = array(0 => "", 1 => "Araçatuba", 2 => "Bilac", 3 => "Birigui", 4 => "Buritama", 5 => "Guararapes", 6 => "Penápolis");
 
 date_default_timezone_set('America/Sao_Paulo');
 
 //if(isset($_POST['botaoCadastrar']) {
-	$mysqli = new mysqli('*********', '*******', '*****', '******') or die('Erro ao conectar ao banco: ' . mysqli_error($mysqli));
+    $mysqli = new mysqli('*********', '*******', '*****', '******') or die('Erro ao conectar ao banco: ' . mysqli_error($mysqli));
     $cidade = $cidadeArray[$_POST['selectCidade']];
     $nome = $_POST['textoNome'];
     $raca = $_POST['textoRaca'];
-	$sexo = $sexoArray[$_POST['selectSexo']];
+    $sexo = $sexoArray[$_POST['selectSexo']];
     $cor = $_POST['textoCor'];
-	if($cor == null) $cor = "";
+    if($cor == null) $cor = "";
     $data = $_POST['textoIdade'];
-	if($data != null) {
+    if($data != null) {
         $anoArray = explode('/', $data);
-	    $anoNascimento = $anoArray[1].'-'.$anoArray[0].'-'.'01';
-	}
-	else $anoNascimento = null;
-	$tamanho = $tamanhoArray[$_POST['selectTamanho']];
+        $anoNascimento = $anoArray[1].'-'.$anoArray[0].'-'.'01';
+    }
+    else $anoNascimento = null;
+    $tamanho = $tamanhoArray[$_POST['selectTamanho']];
     $email = $_POST['textoEmail'];
-	$telefone = $_POST['textoTelefone'];
+    $telefone = $_POST['textoTelefone'];
     $descricao = $_POST['textoDescricao'];
-	if($descricao == null) $descricao = "";
+    if($descricao == null) $descricao = "";
     $foto = $_FILES['arqFoto'];
-	$queryfoto = "SELECT Max(id) FROM animal";
-	$nfoto = buscaNum($queryfoto);
-	$nfoto++;
-	$mysqlFoto = NULL;
-	$dataAtual = date('Y-m-d', time());
-	
-	if(isset($foto)) {
-		$nomeFinal = 'img/animal' . $nfoto . '.jpg';
-		if(move_uploaded_file($foto['tmp_name'], $nomeFinal)) {
-			$tamanhoFoto = filesize($nomeFinal);
-			$mysqlFoto = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoFoto));
-		}
-	}
-	else echo 'Você não fez o upload de forma satisfatória.';
-	
+    $queryfoto = "SELECT Max(id) FROM animal";
+    $nfoto = buscaNum($queryfoto);
+    $nfoto++;
+    $mysqlFoto = NULL;
+    $dataAtual = date('Y-m-d', time());
+    
+    if(isset($foto)) {
+        $nomeFinal = 'img/animal' . $nfoto . '.jpg';
+        if(move_uploaded_file($foto['tmp_name'], $nomeFinal)) {
+            $tamanhoFoto = filesize($nomeFinal);
+            $mysqlFoto = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoFoto));
+        }
+    }
+    else echo 'Você não fez o upload de forma satisfatória.';
+    
     $sql = "INSERT INTO animal (id, cidade, nome, raca, sexo, cor, anonasc, tamanho, disponivel, email, telefone, descricao, foto, datapublicacao) VALUES
-	('$nfoto', '$cidade', '$nome', '$raca', '$sexo', '$cor', '$anoNascimento', '$tamanho', 0, '$email', '$telefone', '$descricao', '$mysqlFoto',
-	'$dataAtual')";
+    ('$nfoto', '$cidade', '$nome', '$raca', '$sexo', '$cor', '$anoNascimento', '$tamanho', 0, '$email', '$telefone', '$descricao', '$mysqlFoto',
+    '$dataAtual')";
     $query = mysqli_query($mysqli, $sql) or die("Erro de inserção!");
-	enviarEmail($cidade, $nome, $raca, $sexo, $cor, $anoNascimento, $email, $telefone, $descricao, $nomeFinal, $dataAtual);
-	if($mysqli == NULL) echo "mysqli é nulo!";
-	require_once "cad_ok.php";
+    enviarEmail($cidade, $nome, $raca, $sexo, $cor, $anoNascimento, $email, $telefone, $descricao, $nomeFinal, $dataAtual);
+    if($mysqli == NULL) echo "mysqli é nulo!";
+    require_once "cad_ok.php";
     mysqli_close($mysqli);
 //}
 }
