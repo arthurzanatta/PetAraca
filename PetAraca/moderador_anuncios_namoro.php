@@ -54,8 +54,8 @@ if(isset($_SESSION['usuarioLogin']) && isset($_SESSION['usuarioSenha'])) {
             if($i > $min) echo '<br>';
             $query = 'SELECT descricao FROM animal WHERE id = ' . $i . ' AND disponivel = 0';
             echo busca($query, 0, 0, "") . '</br>';
-			$query = 'SELECT datapublicacao FROM animal WHERE id = ' . $i . ' AND disponivel = 0';
-			echo 'Data de publicação: ' . buscaDataAtual($query) . '</br>';
+            $query = 'SELECT datapublicacao FROM animal WHERE id = ' . $i . ' AND disponivel = 0';
+            echo 'Data de publicação: ' . buscaDataAtual($query) . '</br>';
             $query = 'SELECT foto FROM animal WHERE id = ' . $i . ' AND disponivel = 0';
             echo busca($query, 2, $i, "animal");
             echo '</br>';

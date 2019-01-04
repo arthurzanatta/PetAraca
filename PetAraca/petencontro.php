@@ -81,7 +81,7 @@ include_once("busca.php");
                             $query = 'SELECT descricao FROM animal WHERE id = ' . $i . ' AND disponivel = 1';
                             echo busca($query, 0, 0, "") . '</br>';
                             $query = 'SELECT datapublicacao FROM animal WHERE id = ' . $i . ' AND disponivel = 1';
-							if(buscaDataAtual($query) != "") {
+                            if(buscaDataAtual($query) != "") {
                                 echo '<b>Data de publicação:</b> ' . buscaDataAtual($query). '</br>';
                             }
                             $query = 'SELECT foto FROM animal WHERE id = ' .$i . ' AND disponivel = 1';

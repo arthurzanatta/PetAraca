@@ -13,31 +13,31 @@ require 'PHPMailer/src/SMTP.php';
 function cadastrar() {
 
 //if(isset($_POST['botaoCadastrar']) {
-	$mysqli = new mysqli('*********', '****', '*****', '********') or die('Erro ao conectar ao banco: ' . mysqli_error($mysqli));
-	$descricao = $_POST['textoDescricao'];
+    $mysqli = new mysqli('*********', '****', '*****', '********') or die('Erro ao conectar ao banco: ' . mysqli_error($mysqli));
+    $descricao = $_POST['textoDescricao'];
     $anunciante = $_POST['textoAnunciante'];
-	$contato = $_POST['textoContato'];
-	$foto = $_FILES['arqFoto'];
-	//$conteudo = file_get_contents($foto['tmp_name']);
-	$queryfoto = "SELECT Max(id) FROM doacao";
-	$idfoto = buscaNum($queryfoto);
-	$idfoto++;
-	$mysqlFoto = NULL;
-	
-	if(isset($foto)) {
-		$nomeFinal = 'img/doacao' . $idfoto . '.jpg';
-		if(move_uploaded_file($foto['tmp_name'], $nomeFinal)) {
-			$tamanhoFoto = filesize($nomeFinal);
-			$mysqlFoto = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoFoto));
-		}
-	}
-	else echo 'Você não fez o upload de forma satisfatória.';
-	
+    $contato = $_POST['textoContato'];
+    $foto = $_FILES['arqFoto'];
+    //$conteudo = file_get_contents($foto['tmp_name']);
+    $queryfoto = "SELECT Max(id) FROM doacao";
+    $idfoto = buscaNum($queryfoto);
+    $idfoto++;
+    $mysqlFoto = NULL;
+    
+    if(isset($foto)) {
+        $nomeFinal = 'img/doacao' . $idfoto . '.jpg';
+        if(move_uploaded_file($foto['tmp_name'], $nomeFinal)) {
+            $tamanhoFoto = filesize($nomeFinal);
+            $mysqlFoto = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoFoto));
+        }
+    }
+    else echo 'Você não fez o upload de forma satisfatória.';
+    
     $sql = "INSERT INTO doacao (id, descricao, anunciante, contato, foto, disponivel) VALUES ('$idfoto', '$descricao','$anunciante', '$contato', '$mysqlFoto', 0)";
     $query = mysqli_query($mysqli, $sql) or die("Erro de inserção!");
-	enviarEmail($descricao, $anunciante, $contato, $nomeFinal);
-	if($mysqli == NULL) echo "A variável mysqli é nulo!";
-	require_once "cad_ok.php";
+    enviarEmail($descricao, $anunciante, $contato, $nomeFinal);
+    if($mysqli == NULL) echo "A variável mysqli é nulo!";
+    require_once "cad_ok.php";
     mysqli_close($mysqli);
 //}
 }

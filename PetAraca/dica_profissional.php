@@ -32,7 +32,7 @@
                     com complicações necessitam de intervenção cirúrgica.</p>
                     <p>&nbsp;Embora as úlceras de córnea possam aparentar ser simples, são um problema grave, que podem levar a perda da visão, ou até mesmo do
                     olho do animal. Caso seu cão, ou gato apresentem qualquer sinal de desconforto ocular, procure um profissional da área o mais rápido
-					possível.</p>
+                    possível.</p>
                     <img class="logo" src="img/amanda_araujo.png" width="40%" height="40%">
                     <p align="center" style="font-size:14px;">Drª Amanda Araújo</p>
                     <p align="center" style="font-size:14px;">Médica Veterinária na Clínica Veterinária Arlindo Araújo</br>Araçatuba-SP</p>

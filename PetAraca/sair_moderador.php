@@ -5,7 +5,7 @@ session_destroy();
 
 unset (
     $_SESSION['usuarioLogin'],
-	$_SESSION['usuarioSenha']
+    $_SESSION['usuarioSenha']
 );
 
 header("Location: login_moderador.php");
