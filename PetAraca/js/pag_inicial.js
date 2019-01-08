@@ -7,7 +7,7 @@ function PaginaTeste() {
 }
 
 function Teste() {
-	var x = document.getElementById("login");
-	x.value = "teste";
-	//return "teste";
+    var x = document.getElementById("login");
+    x.value = "teste";
+    //return "teste";
 }

@@ -1,22 +1,22 @@
 .direita {
-	width:20%;
-	float:left;
-	margin-right:30px;
-	margin-left:75px;
+    width:20%;
+    float:left;
+    margin-right:30px;
+    margin-left:75px;
 }
 .esquerda {
-	width:20%;
-	float:left;
-	margin-left:20px;
-	margin-bottom:20px;
-	margin-right:75px;
-	clear:both;
+    width:20%;
+    float:left;
+    margin-left:20px;
+    margin-bottom:20px;
+    margin-right:75px;
+    clear:both;
 }
 .rodape {
-	width:100%;
-	height:100px;
-	bottom:0;
-	clear:both;
+    width:100%;
+    height:100px;
+    bottom:0;
+    clear:both;
 }
 
 .img:hover{
