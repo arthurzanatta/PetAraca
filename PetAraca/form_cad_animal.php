@@ -13,7 +13,8 @@ require 'PHPMailer/src/SMTP.php';
 function cadastrar() {
 $sexoArray = array(0 => "", 1 => "Fêmea", 2 => "Macho");
 $tamanhoArray = array(0 => "", 1 => "Micro", 2 => "Pequeno", 3 => "Médio", 4 => "Grande");
-$cidadeArray = array(0 => "", 1 => "Araçatuba", 2 => "Bilac", 3 => "Birigui", 4 => "Buritama", 5 => "Guararapes", 6 => "Penápolis");
+$cidadeArray = array(0 => "", 1 => "Araçatuba", 2 => "Auriflama", 3 => "Bilac", 4 => "Birigui", 5 => "Buritama",
+6 => "Guararapes", 7 => "Penápolis");
 
 date_default_timezone_set('America/Sao_Paulo');
 

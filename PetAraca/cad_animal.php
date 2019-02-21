@@ -26,11 +26,12 @@
                         <div class="cidade"><select name="selectCidade" id="selectCidade">
                             <option value=""></option>
                             <option value="1">Araçatuba</option>
-                            <option value="2">Bilac</option>
-                            <option value="3">Birigui</option>
-                            <option value="4">Buritama</option>
-                            <option value="5">Guararapes</option>
-                            <option value="6">Penápolis</option>
+                            <option value="2">Auriflama</option>
+                            <option value="3">Bilac</option>
+                            <option value="4">Birigui</option>
+                            <option value="5">Buritama</option>
+                            <option value="6">Guararapes</option>
+                            <option value="7">Penápolis</option>
                         </select></div>
                     </p>
                     <h3>Informações sobre seu Pet</h3>
