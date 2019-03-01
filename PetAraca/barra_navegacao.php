@@ -16,7 +16,8 @@
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Dica Profissional</a>
                     <div class="dropdown-content">
-                        <a href="dica_profissional.php">Oftalmologia - Amanda Araújo</a>
+                        <a href="ulcera_cornea_caes_gatos.php">Oftalmologia - Amanda Araújo</a>
+                        <a href="epigenetica.php">Genética - Ludmilla Zavarez</a>
                     </div>
             </li>
             <li><a href="anuncie.php" target="_parent">Anuncie</a></li>
