@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
-    <title>PetAraçá - Login de moderador</title>
+    <title>Pet Araçá - Login de moderador</title>
 </head>
 <body>
     <h1>Área de Moderação</h1>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
-        <title>Mural - Araçacão</title>
+        <title>Pet Araçá - Mural</title>
         <script type="text/javascript" src="js/pag_inicial2.js"></script>
     </head>
     <body bgcolor="eeffee">

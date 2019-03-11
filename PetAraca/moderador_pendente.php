@@ -8,7 +8,7 @@ include_once("busca.php");
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PetAraçá - Moderadores Pendentes</title>
+    <title>Pet Araçá - Moderadores Pendentes</title>
 </head>
 <body>
 <link href="anuncios_namoro.css" rel="stylesheet">

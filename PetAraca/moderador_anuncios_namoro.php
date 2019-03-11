@@ -9,7 +9,7 @@ include_once("busca.php");
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PetAraçá - Moderador de Anúncios PetNamoro</title>
+    <title>Pet Araçá - Moderador de Anúncios PetNamoro</title>
 </head>
 <body>
 <link href="anuncios_namoro.css" rel="stylesheet">

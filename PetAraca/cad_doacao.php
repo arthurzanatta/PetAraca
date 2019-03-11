@@ -5,7 +5,7 @@
     <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
-    <title>PetAraçá - Cadastro de doação de animais</title>
+    <title>Pet Araçá - Cadastro de doação de animais</title>
     <script type="text/javascript" src="js/cad_doacao.js"></script>
 </head>
 <body bgcolor="eeffee">

@@ -8,7 +8,7 @@ include_once("busca.php");
     <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
-    <title>PetAraçá - Pet Doação</title>
+    <title>Pet Araçá - Pet Doação</title>
 </head>
 <body bgcolor="eeffee">
     <link href="css/publicacoes.css" rel="stylesheet">
@@ -21,7 +21,7 @@ include_once("busca.php");
                 <h2 align="center">Cães para doação</h2>
                 <center>Adote um cão que está precisando de um novo lar.</center></br></br>
                 <?php
-                    $npub = 10; //Número máximo de publicações por página.
+                    $npub = 100; //Número máximo de publicações por página.
                     $query = 'SELECT MAX(id) FROM doacao';
                     $max = buscaNum($query);
                     $query = 'SELECT MIN(id) FROM doacao';

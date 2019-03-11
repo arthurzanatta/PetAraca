@@ -7,7 +7,7 @@
         <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
         <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
-        <title>PetAraçá</title>
+        <title>Pet Araçá</title>
         <script type="text/javascript" src="js/pag_inicial2.js"></script>
     </head>
     <body bgcolor="eeffee">

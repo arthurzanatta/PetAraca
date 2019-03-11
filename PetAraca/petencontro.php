@@ -9,7 +9,7 @@ include_once("busca.php");
     <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
-    <title>PetAraçá - Anúncios Pet Namoro</title>
+    <title>Pet Araçá - Anúncios Pet Namoro</title>
 </head>
 <body bgcolor="eeffee">
     <link href="css/publicacoes.css" rel="stylesheet">
@@ -22,7 +22,7 @@ include_once("busca.php");
             <h2 align="center">Publicações</h2>
             <center>Encontre aqui um parceiro para o seu cão sem sair de casa.</center></br>
             <?php
-                $npub = 30; //Número máximo de publicações por página. 10
+                $npub = 100; //Número máximo de publicações por página. 10
                 $query = 'SELECT MAX(id) FROM animal';
                 $max = buscaNum($query);
                 //$min = $_GET['min'];
