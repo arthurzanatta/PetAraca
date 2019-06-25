@@ -27,7 +27,7 @@
                     <div class="dropdown-content">
                         <a href="ulcera_cornea_caes_gatos.php">Oftalmologia - Amanda Araújo</a>
                         <a href="epigenetica.php">Genética - Ludmilla Zavarez</a>
-						<a href="anestesia_geral_dissociativa.php">Anestesiologia - Juliana Talita Mercês</a>
+                        <a href="anestesia_geral_dissociativa.php">Anestesiologia - Juliana Talita Mercês</a>
                     </div>
             </li>
             <li><a href="anuncie.php" target="_parent">Anuncie</a></li>
