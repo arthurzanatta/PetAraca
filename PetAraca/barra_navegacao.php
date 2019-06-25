@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135456390-1"></script>
     <script>
@@ -9,9 +10,8 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-135456390-1');
-     </script>
+    </script>
     <title>Barra de navegação</title>
-    <meta charset="UTF-8">
 </head>
 <body bgcolor="#eeffee">
     <link href="css/pag_inicial.css" rel="stylesheet">
