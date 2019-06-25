@@ -1,6 +1,15 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135456390-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135456390-1');
+     </script>
     <title>Barra de navegação</title>
     <meta charset="UTF-8">
 </head>
@@ -18,6 +27,7 @@
                     <div class="dropdown-content">
                         <a href="ulcera_cornea_caes_gatos.php">Oftalmologia - Amanda Araújo</a>
                         <a href="epigenetica.php">Genética - Ludmilla Zavarez</a>
+						<a href="anestesia_geral_dissociativa.php">Anestesiologia - Juliana Talita Mercês</a>
                     </div>
             </li>
             <li><a href="anuncie.php" target="_parent">Anuncie</a></li>

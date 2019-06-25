@@ -10,6 +10,9 @@ include_once("busca.php");
     <link rel="icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/logo-pet-araca.ico" type="image/x-icon" />
     <title>Pet Araçá - Anúncios Pet Namoro</title>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/functions_jquery.js" type="text/javascript"> 
+    </script>
 </head>
 <body bgcolor="eeffee">
     <link href="css/publicacoes.css" rel="stylesheet">
@@ -20,7 +23,8 @@ include_once("busca.php");
         <?php require_once "menu.php" ?>
         <div class="conteudo col-6">
             <h2 align="center">Publicações</h2>
-            <center>Encontre aqui um parceiro para o seu cão sem sair de casa.</center></br>
+            <center>Encontre aqui um parceiro para o seu cão sem sair de casa.</center></br></br>
+            <input type="text" id="textoFiltro" placeholder="Filtrar publicações"/></br></br>
             <?php
                 $npub = 100; //Número máximo de publicações por página. 10
                 $query = 'SELECT MAX(id) FROM animal';
@@ -38,7 +42,7 @@ include_once("busca.php");
                         $query = 'SELECT disponivel FROM animal WHERE id = ' . $i;
                         $dispo = buscaNum($query);
                         if($dispo == 1) {
-                            echo '<div>'; //</div>
+                            echo '<div class="filterDiv">'; //</div>
                             if($j % 2 != 0) echo '<div class="esquerda">';
                             else echo '<div class="esquerda" style="clear:both;">';
                             echo '<br>';
