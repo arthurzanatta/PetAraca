@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-135456390-1');
     </script>
     <title>Barra de navegação</title>
@@ -28,6 +27,8 @@
                         <a href="ulcera_cornea_caes_gatos.php">Oftalmologia - Amanda Araújo</a>
                         <a href="epigenetica.php">Genética - Ludmilla Zavarez</a>
                         <a href="anestesia_geral_dissociativa.php">Anestesiologia - Juliana Talita Mercês</a>
+                        <a href="zoonoses.php">Zoonoses - Thamiris Minari</a>
+                        <a href="calculos_urinarios_caes_gatos.php">Urologia - Marina Lombardi</a>
                     </div>
             </li>
             <li><a href="anuncie.php" target="_parent">Anuncie</a></li>

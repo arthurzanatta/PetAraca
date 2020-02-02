@@ -18,7 +18,7 @@
                 <?php require_once "menu.php" ?>
                 <div class="conteudo col-6">
                     <h2>Seja nosso parceiro!</h2>
-                    Gostaria de ver sua empresa no site PET ARAÇÁ? Para anunciar, escreva um e-mail para
+                    <p align="justify">Gostaria de ver sua empresa no site PET ARAÇÁ? Para anunciar, escreva um e-mail para
                     <a href="mailto:petaracatuba@gmail.com">petaracatuba@gmail.com</a>. e enviaremos mais informações. Agradecemos pela escolha.
                 </div>
                 <?php require_once "anuncios.php" ?>

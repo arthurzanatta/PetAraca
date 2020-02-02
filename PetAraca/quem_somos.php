@@ -17,14 +17,14 @@
             <div class="row">
                 <?php require_once "menu.php" ?>
                 <div class="conteudo col-6">
-                    <p>&nbsp;Motivados pela grande dificuldade em encontrar um parceiro canino em Araçatuba e região, pensamos numa maneira simples e ao
-                    alcance do usuário para poder aproximar este momento entre os proprietários dos cães. &nbsp;Elaboramos a página <b>Pet Encontro</b> para
-                    facilitar o contato e o possível encontro entre pets de raça canina com o objetivo de procriação, e consequentemente, surgimento de um
-                    “networking animal”.</p>
-                    <p>&nbsp;O site Pet Araçá também traz uma novidade: leitura sobre dicas e cuidados com cães e gatos apresentados por profissionais
-                    veterinários.
-                    &nbsp;Além disso, criamos a página <b>Pet Doação</b> para anunciar a doação de animais que forem encontrados na rua, abandonados ou que o 
-                    próprio proprietário esteja doando.</p>
+                    <p align="justify">&nbsp;Motivados pela grande dificuldade em encontrar um parceiro canino em Araçatuba e região, pensamos numa maneira
+                    simples e ao alcance do usuário para poder aproximar este momento entre os proprietários dos cães. &nbsp;Elaboramos a página
+                    <b>Pet Encontro</b> para facilitar o contato e o possível encontro entre pets de raça canina com o objetivo de procriação, e
+                    consequentemente, surgimento de um "networking animal".</p>
+                    <p align="justify">&nbsp;O site Pet Araçá também traz uma novidade: leitura sobre dicas e cuidados com cães e gatos apresentados por
+                    profissionais veterinários.
+                    <p align="justify">&nbsp;Além disso, criamos a página <b>Pet Doação</b> para anunciar a doação de animais que forem encontrados na rua,
+                    abandonados ou que o próprio proprietário esteja doando.</p>
                     <p>&nbsp;Este é o nosso contato, queremos saber de você:</p>
                     <p>&nbsp;- Sugestões de melhorias;</p> 
                     <p>&nbsp;- Críticas;</p> 
